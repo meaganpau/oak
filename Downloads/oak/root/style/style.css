@@ -202,8 +202,34 @@ h6 {
 .gallery img {
 	max-width: 285px;
 	margin-bottom: 15px;
+	border: 2px solid transparent;
 }
 
-.gallery a:hover {
+.gallery img:hover {
+	border: 2px solid black;
 	opacity: 0.5;
+}
+
+button {
+	background: #7DEDC7;
+    color: #FFF;
+    font-family: 'Ubuntu';
+    font-weight: bolder;
+    letter-spacing: 4px;
+    font-size: 1em;
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background: #FFF;
+	color: #7DEDC7;
+	border: 2px solid #7DEDC7;
+}
+
+button:focus {
+	outline: 0;
 }
