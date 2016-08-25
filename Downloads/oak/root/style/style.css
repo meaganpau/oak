@@ -262,7 +262,6 @@ button {
     text-align: center;
     border: none;
     transition: all 0.3s ease 0s;
-    display: inline-block;
     float: right;
 }
 
@@ -330,18 +329,27 @@ footer {
 	height: 30px;
 }
 
-.subscribe {
-	background-color: #7DEDC7;
-	padding: 50px;
-	width: 450px;
-}
-
 .newsletter {
 	font-size: 2em;
 }
 
-#clock {
-	float: right;
+.subscribe {
+	height: 300px;
+}
+
+#green {
+	float: left;
+	width: 50%;
+	background-color: #7DEDC7;
+	height: 300px;
+}
+
+#email {
 	display: inline-block;
-	width: 450px;
+	float: right;
+	width: 50%;
+}
+
+#email img {
+	max-width: 450px;
 }
