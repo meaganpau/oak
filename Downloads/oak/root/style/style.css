@@ -1,9 +1,12 @@
 body {
+	overflow-x: hidden;	
+}
+
+.container {
 	margin-top: 2%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 900px;
-	overflow-x: hidden;	
 }
 
 .header {
@@ -33,8 +36,12 @@ h2 {
 
 .oak {
 	float: left;
-	margin-top: 35px;
+	margin-top: 40px;
 	width: 50%;
+}
+
+.oak img {
+	height: 15px;
 }
 
 .oak a {
@@ -196,18 +203,51 @@ h6 {
 
 .gallery {
 	text-align: justify;
-	text-align-last: justify;
 }
 
-.gallery img {
+.item {
+	display: inline-block;
+	position: relative;
+	font-family: 'Ubuntu';
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.item img {
 	max-width: 285px;
 	margin-bottom: 15px;
-	border: 2px solid transparent;
 }
 
-.gallery img:hover {
-	border: 2px solid black;
-	opacity: 0.5;
+.item:after, .item:before {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.item:after {
+    content:'\A';
+    width: 282px; 
+    height: 303px;
+    top: 0; 
+    left: 0;
+    background: rgba(125,237,199,0.7);
+    border: 2px solid black;
+}
+
+.item:before {
+    content: attr(data-content);
+    width: 80%;
+    color: #000;
+    z-index: 1;
+    top: 80%;
+    padding:4px 10px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+.item:hover:after, .item:hover:before {
+    opacity: 1;
 }
 
 button {
@@ -222,6 +262,8 @@ button {
     text-align: center;
     border: none;
     transition: all 0.3s ease 0s;
+    display: inline-block;
+    float: right;
 }
 
 button:hover {
@@ -230,6 +272,55 @@ button:hover {
 	border: 2px solid #7DEDC7;
 }
 
+
 button:focus {
 	outline: 0;
+}
+
+footer {
+	background-color: #eee;
+	height: 200px;
+}
+
+.feeter {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#dropDown {
+    display: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    float: right;
+    width: 200px;
+	background-color: #FFF;
+}
+
+#dropDown a {
+    display: block;
+    padding: 20px;
+}
+
+#dropDown a:hover {
+    background: #000;
+    color: #FFF;
+}
+
+#anchor {
+	position: relative;
+    top: -100px;
+    display: block;
+}
+
+.spacer {
+	width: 100%;
+    display: inline-block;
+}
+
+.refresh {
+	text-align: center;
+}
+
+.refresh img {
+	height: 30px;
 }
