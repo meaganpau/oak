@@ -334,14 +334,14 @@ footer {
 }
 
 .subscribe {
-	height: 300px;
+	height: 303px;
 }
 
 #green {
 	float: left;
 	width: 50%;
 	background-color: #7DEDC7;
-	height: 300px;
+	height: 303px;
 }
 
 #email {
@@ -351,5 +351,5 @@ footer {
 }
 
 #email img {
-	max-width: 450px;
+	max-height: 303px;
 }
