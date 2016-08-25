@@ -321,6 +321,27 @@ footer {
 	text-align: center;
 }
 
+.refresh a:hover {
+	opacity: 0.5;
+  	transition: 0.3s;
+}
+
 .refresh img {
 	height: 30px;
+}
+
+.subscribe {
+	background-color: #7DEDC7;
+	padding: 50px;
+	width: 450px;
+}
+
+.newsletter {
+	font-size: 2em;
+}
+
+#clock {
+	float: right;
+	display: inline-block;
+	width: 450px;
 }

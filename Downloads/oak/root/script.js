@@ -1,4 +1,4 @@
-$(document).ready( function(){
+3$(document).ready( function(){
   console.log('sipsupsupsu');
 
     $('#click').click( function(event){
@@ -16,3 +16,5 @@ $(document).ready( function(){
     });
 
 });
+
+
