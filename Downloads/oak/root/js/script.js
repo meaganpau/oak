@@ -1,5 +1,4 @@
 $(document).ready( function(){
-  console.log('sipsupsupsu');
 
     $('#click').click( function(event){
         
